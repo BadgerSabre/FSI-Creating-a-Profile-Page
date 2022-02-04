@@ -7,9 +7,7 @@ content.append(header)
 
 let dogImage = document.createElement('img')
 dogImage.setAttribute('class','src')
-dogImage.setAttribute('class','alt')
 dogImage.append('./assets/rizzo.jpg')
-dogImage.append('A picture of Rizzo')
 content.append(dogImage)
 
 let dogDetails = document.createElement('h3')
@@ -26,5 +24,3 @@ feedingTimes.append('Feeding Times:')
 content.append(feedingTimes)
 
 let unorderedList = document.createElement('ul')
-unorderedList.setAttribute('class','unordered-list')
-
