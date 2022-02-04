@@ -7,8 +7,8 @@ content.append(header)
 
 //Cannot get image link to append
 let dogImage = document.createElement('img')
-dogImage.setAttribute('class','src')
-dogImage.append('./assets/rizzo.jpg')
+dogImage.setAttribute('class','dog-image')
+dogImage.setAttribute('src','./assets/rizzo.jpg')
 content.append(dogImage)
 
 let dogDetails = document.createElement('h3')
@@ -26,12 +26,15 @@ content.append(feedingTimes)
 
 //Cannot get unordered list to populate
 let unorderedList = document.createElement('ul')
+
 let timeOne = document.createElement('li')
 timeOne.textContent = '9:00 am'
-unorderedList.append('timeOne')
+unorderedList.append(timeOne)
 let timeTwo = document.createElement('li')
 timeTwo.textContent = '12:00 pm'
-unorderedList.append('timeTwo')
+unorderedList.append(timeTwo)
 let timeThree = document.createElement('li')
 timeThree.textContent = '5:00 pm'
-unorderedList.append('timeThree')
+unorderedList.append(timeThree)
+
+content.append(unorderedList)
